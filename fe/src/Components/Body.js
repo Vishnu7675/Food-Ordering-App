@@ -7,7 +7,7 @@ const Body = ()=>{
      useEffect(()=>{
                 
 
-        fetch('https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=12.9690681&lng=80.2453106&carousel=true&third_party_vendor=1') // Replace with your API URL
+        fetch('http://localhost:4000/') // Replace with your API URL
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
