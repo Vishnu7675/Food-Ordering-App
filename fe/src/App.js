@@ -1,12 +1,48 @@
 import Body from './Components/Body';
 import Header from './Components/Header'
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import ResItem from './Components/ResItem';
+import About from './Components/About';
+
+const AppLayout = ()=>{
+  return (
+    <div>
+       <div>
+        <Header/>
+       </div>
+       <main>
+        <Outlet/>
+       </main>
+    </div>
+  )
+}
+
+const appRouter = createBrowserRouter([
+  {
+    path:'/',
+    element:<AppLayout/>,
+    children:[
+      {
+        path:'/',
+        element:<Body/>
+      },
+      {
+        path:'/resItem',
+        element:<ResItem/>
+      },
+      {
+        path:'/about',
+        element:<About/>
+      }
+    ]
+  }
+])
+
+
+
 function App() {
   return (
-    <div className="container">
-      <Header/>
-      <Body/>
-    
-  </div>
+     <RouterProvider router={appRouter}></RouterProvider>
   );
 }
 

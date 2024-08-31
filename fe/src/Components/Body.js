@@ -1,5 +1,4 @@
-
-
+import { Link } from "react-router-dom"
 import {useState,useEffect} from 'react'
 import Card from './Card';
 
@@ -35,6 +34,7 @@ const Body = ()=>{
      return (
       <div style={{ display: 'flex', flexWrap: 'wrap',cursor:'pointer' }} className='container mt-5 justify-content-between shadow-lg p-3 mb-5 bg-white rounded'>
           {resData?.data?.restaurants?.map((restaurant) => (
+            <Link to={'/resItem'}>
               <Card
                   key={restaurant.info.id} // Assuming `id` is a unique identifier
                   name={restaurant.info.name}
@@ -42,7 +42,10 @@ const Body = ()=>{
                   rating={restaurant.info.avgRating}
                   deliveryTime={restaurant.info.sla.slaString}
                   cuisines={restaurant.info.cuisines}
+                
               />
+            </Link>
+            
           ))}
       </div>
   );
