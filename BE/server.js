@@ -1,13 +1,16 @@
 const express = require('express');
 const app = express();
+var cors = require('cors')
+const restList = require('./data.json')
 
+app.use(cors());
 
 app.get('/',(req,res)=>{
     res.json({status:200,message:'connected to server'})
 })
 app.get('/data',(req,res)=>{
 
-     res.json({status:200,message:'success'});
+     res.json({status:200,message:'success',data:restList});
 })
 
 app.listen(4000,()=>{
