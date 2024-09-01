@@ -1,0 +1,55 @@
+{
+   "category":[
+    
+    {
+    "title":"Whopper Stackers",
+    "items":[
+         {
+            "id": "141538039",
+            "name": "Jr Whopper Stacker- Veg",
+            "category": "Whopper Stackers",
+            "description": "Jr Veg Whopper Double Patty with Cheese Slice",
+            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/19/d4387d28-73ab-45b7-b424-61588863d158_9477217d-7c7a-4834-919a-b9ae7d7cf950.jpg",
+            "inStock": 1,
+            "isVeg": 1,
+            "price": 149
+          
+          },
+          {
+            "id": "141538041",
+            "name": "Veg Whopper Stacker",
+            "category": "Whopper Stackers",
+            "description": "Veg Whopper Double Patty with Cheese Slice",
+            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/28/1f1ee63d-abc2-46c8-a8bf-b02df61a8911_11adc7b3-dde3-4cd3-b3b7-563fb712c287.jpg",
+            "isVeg": 1,
+            "price": 229
+          }
+     ]
+   },
+   {
+    "title":"Burgers & Wraps",
+    "items":[
+        {
+            "id": "112931279",
+            "name": "Paneer Royale Wrap",
+            "category": "Burgers & Wraps",
+            "description": "60 gm Paneer Patty, Sauces In Soft Tortilla Wrap. \nQty: 234 Gms| Kcal: 676.2 | Carbs 63.2 Gms| Sugar: 9.7 Gms| Fat: 35.6 Gms| Saturated fat: 18 Gms| Protein: 25.3 Gms| Sodium: 1077.9 Mg \nContains: Gluten, Soybean, Milk",
+            "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/19/8b7dceef-fbec-498a-86eb-dbecaf159788_a1a97496-211d-4e86-8237-a79e9de4d183.jpg",
+            "isVeg": 1,
+            "price": 209
+          
+       },
+       {
+        "id": "102880241",
+        "name": "Crispy Veg Burger",
+        "category": "Burgers & Wraps",
+        "description": "Masaledar Veg Patty, Onion & Our Signature Tomato Herby Sauce. \nQty: 137 Gms| Kcal: 362 | Carbs 53.4 Gms| Sugar: 6.5 Gms| Fat: 12.8 Gms| Saturated fat: 4.9 Gms| Protein: 8.4 Gms| Sodium: 798.2 Mg \nContains: Gluten, Soybean, Milk, Sesame seeds",
+        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/19/d4387d28-73ab-45b7-b424-61588863d158_9477217d-7c7a-4834-919a-b9ae7d7cf950.jpg",
+        "isVeg": 1,
+        "price": 70
+       }
+     ]
+   }
+   ]
+
+}

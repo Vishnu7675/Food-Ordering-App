@@ -34,7 +34,7 @@ const Body = ()=>{
      return (
       <div style={{ display: 'flex', flexWrap: 'wrap',cursor:'pointer' }} className='container mt-5 justify-content-between shadow-lg p-3 mb-5 bg-white rounded'>
           {resData?.data?.restaurants?.map((restaurant) => (
-            <Link to={'/resItem'}>
+            <Link to={`/resItem/${restaurant.info.id}`}>
               <Card
                   key={restaurant.info.id} // Assuming `id` is a unique identifier
                   name={restaurant.info.name}

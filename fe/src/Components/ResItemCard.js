@@ -1,11 +1,18 @@
 import {useEffect,useState} from 'react'
-const ResItemCard = ()=>{
+import ItemCard from './ItemCard';
+const ResItemCard = ({resItemList})=>{
+  console.log("resList$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$",resItemList.data);
     const [showItem,setShowItem] = useState(false)
     return (
        
         <div>
-                 <div className='text-center mt-5 card shadow-lg p-3 mb-5 bg-white rounded'>
-                <h3 style={{cursor:'pointer'}}>Recommended <span onClick={()=>{
+            {
+              resItemList?.data?.category?.map((res)=>{
+
+                
+                return(
+                <div className='text-center mt-5 card shadow-lg p-3 mb-5 bg-white rounded'>
+                <h3 style={{cursor:'pointer'}}>{res.title} <span onClick={()=>{
                     setShowItem(!showItem);
                 }}>
                    {!showItem?'▼':'▲'}
@@ -18,61 +25,41 @@ const ResItemCard = ()=>{
                 &&
                 <div>
                      <ul style={{listStyle:"none"}}>
-                       <li>Crispy Veg Burger</li>
-                       <li>Crispy Chicken Burger</li>
+                      {
+                        res.items.map((sub)=>{
+                      
+                           return(
+                            <ItemCard 
+                            name={sub.name} 
+                            description={sub.description} 
+                            imageId={sub.imageId} 
+                            price={sub.price}
+                            />
+                           )
+                      
+                          
+                        })
+                      }
+                      
+                      
                      </ul>
                 </div>
              
                 }
                
-            </div>
-
-            <div className='text-center mt-5 card shadow-lg p-3 mb-5 bg-white rounded'>
-            <h3 style={{cursor:'pointer'}}>Burger <span onClick={()=>{
-                setShowItem(!showItem);
-            }}>
-               {!showItem?'▼':'▲'}
-              
-            </span>
-            
-            </h3>
-            {
-            showItem 
-            &&
-            <div>
-                 <ul style={{listStyle:"none"}}>
-                   <li>Crispy Veg Burger</li>
-                   <li>Crispy Chicken Burger</li>
-                 </ul>
-            </div>
-         
+                </div>
+                )
+              })
             }
-           
+            
+
+
+
         </div>
 
-<div className='text-center mt-5 card shadow-lg p-3 mb-5 bg-white rounded'>
-<h3 style={{cursor:'pointer'}}>Broasted <span onClick={()=>{
-    setShowItem(!showItem);
-}}>
-   {!showItem?'▼':'▲'}
-  
-</span>
 
-</h3>
-{
-showItem 
-&&
-<div>
-     <ul style={{listStyle:"none"}}>
-       <li>Crispy Veg Burger</li>
-       <li>Crispy Chicken Burger</li>
-     </ul>
-</div>
+    
 
-}
-
-</div>
-        </div>
         
     )
 }
