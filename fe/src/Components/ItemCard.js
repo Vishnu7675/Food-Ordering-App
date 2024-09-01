@@ -9,9 +9,18 @@ const ItemCard = ({ name, imageId, price, description }) => {
         </div>
         
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <button style={{ marginRight: '10px', cursor: 'pointer' }}>
+          {/* <button style={{ marginRight: '10px', cursor: 'pointer' }} className="data-bs-toggle="tooltip" data-bs-placement="top" title="This is a tooltip">
             🛒
-          </button>
+          </button> */}
+          <button
+           style={{ marginRight: '10px', cursor: 'pointer' }}
+           className="btn "
+           data-bs-toggle="tooltip"
+           data-bs-placement="top"
+           title="Add to cart"
+          >
+          🛒
+         </button>
           
           <img
             style={{ width: '80px', height: '80px', objectFit: 'cover' }}

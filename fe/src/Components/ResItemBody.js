@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import ResItemCard from './ResItemCard';
 
 const ResItemBody =()=>{
-    const [showItem,setShowItem] = useState(false);
+    const [showItem,setShowItem] = useState(0);
     const [resList,setResList] = useState([]);
     const {resId} = useParams();
     useEffect(()=>{
@@ -28,10 +28,34 @@ const ResItemBody =()=>{
 
      },[]);
     
+     const handleChildData =(data)=>{
+    
+        console.log("handle child data");
+        setShowItem(data)
+  
+
+     }
     return (
+
         <div>
+
            
-           <ResItemCard display={showItem} resItemList={resList}/>
+          
+           
+           {
+           resList?.data?.category?.map((category,index)=>{
+            //  {/* <ResItemCard  display={showItem} resItemList={resList}/> */}
+            return(
+                <ResItemCard 
+                index={index}
+                onSendData={handleChildData}
+                showItem={showItem}
+                categories={category}
+                />
+            )
+          
+
+           })}
 
         </div>
         
