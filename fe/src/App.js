@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import ResItem from './Components/ResItem';
 import About from './Components/About';
+import Cart from './Components/Cart';
 
 const AppLayout = ()=>{
   return (
@@ -33,6 +34,10 @@ const appRouter = createBrowserRouter([
       {
         path:'/about',
         element:<About/>
+      },
+      {
+        path:'/cart',
+        element:<Cart/>
       }
     ]
   }

@@ -1,4 +1,12 @@
+import { useSelector,useDispatch } from 'react-redux';
+import { addToCart } from './redux-stores/slices/CartSlice';
 const ItemCard = ({ name, imageId, price, description }) => {
+    const dispatch = useDispatch();
+    function addItemToCart(){
+
+        dispatch(addToCart("dummy data"));
+     }
+  
     return (
       <div className='card shadow-sm p-3' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div style={{ fontWeight: 'bold' }}>
@@ -18,6 +26,7 @@ const ItemCard = ({ name, imageId, price, description }) => {
            data-bs-toggle="tooltip"
            data-bs-placement="top"
            title="Add to cart"
+           onClick={addItemToCart}
           >
           🛒
          </button>
