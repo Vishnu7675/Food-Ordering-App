@@ -1,0 +1,168 @@
+{
+    "restaurants":
+        [
+               {    
+              
+                  "resId":"53355",
+                  "resName":"Burger King",
+               
+                "category":[
+                 
+                 {
+                 "title":"Whopper Stackers",
+                 "items":[
+                      {
+                         "id": "141538039",
+                         "name": "Jr Whopper Stacker- Veg",
+                         "category": "Whopper Stackers",
+                         "description": "Jr Veg Whopper Double Patty with Cheese Slice",
+                         "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/19/d4387d28-73ab-45b7-b424-61588863d158_9477217d-7c7a-4834-919a-b9ae7d7cf950.jpg",
+                         "inStock": 1,
+                         "isVeg": 1,
+                         "price": 149
+                       
+                       },
+                       {
+                         "id": "141538041",
+                         "name": "Veg Whopper Stacker",
+                         "category": "Whopper Stackers",
+                         "description": "Veg Whopper Double Patty with Cheese Slice",
+                         "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/28/1f1ee63d-abc2-46c8-a8bf-b02df61a8911_11adc7b3-dde3-4cd3-b3b7-563fb712c287.jpg",
+                         "isVeg": 1,
+                         "price": 229
+                       }
+                  ]
+                },
+                {
+                 "title":"Burgers & Wraps",
+                 "items":[
+                     {
+                         "id": "112931279",
+                         "name": "Paneer Royale Wrap",
+                         "category": "Burgers & Wraps",
+                         "description": "60 gm Paneer Patty, Sauces In Soft Tortilla Wrap. \nQty: 234 Gms| Kcal: 676.2 | Carbs 63.2 Gms| Sugar: 9.7 Gms| Fat: 35.6 Gms| Saturated fat: 18 Gms| Protein: 25.3 Gms| Sodium: 1077.9 Mg \nContains: Gluten, Soybean, Milk",
+                         "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/19/8b7dceef-fbec-498a-86eb-dbecaf159788_a1a97496-211d-4e86-8237-a79e9de4d183.jpg",
+                         "isVeg": 1,
+                         "price": 209
+                       
+                    },
+                    {
+                     "id": "102880241",
+                     "name": "Crispy Veg Burger",
+                     "category": "Burgers & Wraps",
+                     "description": "Masaledar Veg Patty, Onion & Our Signature Tomato Herby Sauce. \nQty: 137 Gms| Kcal: 362 | Carbs 53.4 Gms| Sugar: 6.5 Gms| Fat: 12.8 Gms| Saturated fat: 4.9 Gms| Protein: 8.4 Gms| Sodium: 798.2 Mg \nContains: Gluten, Soybean, Milk, Sesame seeds",
+                     "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/19/d4387d28-73ab-45b7-b424-61588863d158_9477217d-7c7a-4834-919a-b9ae7d7cf950.jpg",
+                     "isVeg": 1,
+                     "price": 70
+                    }
+                  ]
+                }
+                ]
+             
+               },
+               {
+                "resName":"Chinese Wok",
+                "resId":"704921",
+                "category":[
+                  {
+                     "title":"Recommended",
+                     "items":[
+                      {
+                        "id": "119100593",
+                        "name": "Combo for 1 Non-Veg",
+                        "category": "Monsoon Combos",
+                        "description": "Serves 1 | Combo for one (Rice/Noodle Bowl with choice of Non-Veg Gravy, Non- Veg Momos & Drinks)",
+                        "imageId": "440c06ace44b931b729d9b6a090aba07",
+                        "inStock": 1,
+                        "price": 250
+                      },
+                      {
+                        "id": "119100592",
+                        "name": "Combo for 1 Veg",
+                        "category": "Monsoon Combos",
+                        "description": "Serves 1 | Combo for one (Rice/Noodle Bowl with choice of Veg Gravy, Veg Momos & Drinks)",
+                        "imageId": "3e4f7ca32bf517b390f1cb3205b892e4",
+                        "inStock": 1,
+                        "price":"450"
+                  
+                      },
+                      {
+                        "id": "137412051",
+                        "name": "Hunan Paneer Dry",
+                        "category": "Starters & Soup",
+                        "description": "Serves 1 | (Spicy) Cubes Of Paneer, Onion, Capsicum Tossed With Spicy & Savory flavors of Hunan Sauce.",
+                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/7/a05bf8ea-ee68-4fd8-be01-1ac10f940fa5_c8e1a500-cd36-4f60-a771-1e5cf22e73c4.jpg_compressed",
+                        "inStock": 1,
+                        "isVeg": 1,
+                        "price": 369
+                      },
+                      {
+                        "id": "137412050",
+                                "name": "Schezwan Paneer Dry",
+                                "category": "Starters & Soup",
+                                "description": "Serves 1 | (Spicy) Cubes Of Paneer, Onion, Capsicum Tossed With Schezwan Sauce.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/7/e3d760e8-a686-446b-887e-0a3256b077f4_1d4af440-1e94-440e-8e46-762968fb77a1.jpg_compressed",
+                                "inStock": 1,
+                                "isVeg": 1,
+                                "price": 369
+                      },
+                      {
+                        "id": "137412055",
+                                "name": "Hunan Chicken Dry",
+                                "category": "Starters & Soup",
+                                "description": "Serves 1 | (Spicy) Diced chicken, Onion, Capsicum Tossed With Spicy & Savory flavors of Hunan Sauce.",
+                                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/1/437b789a-adb8-4e75-8eff-e189113ffb30_6c98fe7d-1a74-4c71-8119-42b7993ab602.jpg_compressed",
+                                "inStock": 1,
+                                "price": 389
+                      }
+
+
+                     ]
+                  },
+                  {
+                    "title":"Rice & Noodles - Half",
+                    "items":[
+                      {
+                        "id": "115166685",
+                        "name": "Chicken Schezwan Noodles - Half (500 ml)",
+                        "category": "Rice & Noodles - Half",
+                        "description": "Serves 1 | Noodles tossed with diced chicken, egg, onion, capsicum & carrot in schezwan sauce. Garnished with spring onion.",
+                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/7/72f8c32b-868a-4e58-87d4-483d7428de55_6f0b4cad-8420-4188-bf35-abff1b718f25.jpg",
+                        "inStock": 1,
+                        "price": 28900
+                      },
+                      {
+                        "id": "115166670",
+                        "name": "Chicken Hakka Noodles - Half (500 ml)",
+                        "category": "Rice & Noodles - Half",
+                        "description": "Serves 1 | Noodles Tossed With Egg Mixed Veggies (Cabbage, Carrot, Onion) With A Touch Of Dark Soya & Garnished With Spring Onion.",
+                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/7/be41e128-db25-4224-9e6b-e925e8ead9a5_daf5e930-5820-41df-82b8-749371d79cee.jpg_compressed",
+                        "inStock": 1,
+                        "price": 27900
+                      }
+                    ]
+                  },
+                  {
+                    "title":"Non Veg Starters",
+                    "items":[
+                      {
+                        "id": "115166067",
+                        "name": "Kung Pao Chicken Dry",
+                        "category": "Starters & Soup",
+                        "description": "Serves 1 | (Medium Spicy) Chicken cubes tossed with Kung Pao sauce. 485.8kcal",
+                        "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/7/d91d6ee6-93b8-4665-9d76-f857af64095f_6de27961-6a2c-44a5-9bf3-1b469da37637.jpg_compressed",
+                        "inStock": 1,
+                        "price": 38900
+                      }
+                 
+                    ]
+                    
+                  }
+                ]
+               }
+             
+        
+        ]
+        
+}
+

@@ -8,7 +8,7 @@ const ResItem = ()=>{
     return (
         <div>
             <div className='container'>
-                <h3 className='text-center mt-4'>Burger King</h3>
+             
             </div>
            <ResItemBody/>
         </div>
