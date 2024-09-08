@@ -40,10 +40,15 @@ const cartSlice = createSlice(
                cart.quantity = cart.quantity -1;
             }
           })
+         },
+         deleteCartItem:(state,action)=>{
+          state.cartItems =  state.cartItems.filter((cart)=>{
+               return  cart.name!=action.payload
+           })
          }
       }
     }
 )
 
-export const {addToCart,incCartItem,decCartItem} = cartSlice.actions;
+export const {addToCart,incCartItem,decCartItem,deleteCartItem} = cartSlice.actions;
 export default cartSlice.reducer

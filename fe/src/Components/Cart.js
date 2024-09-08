@@ -1,6 +1,6 @@
 import React from 'react';
 import EmptyCart from './EmptyCart';
-import { incCartItem,decCartItem } from './redux-stores/slices/CartSlice';
+import { incCartItem,decCartItem,deleteCartItem } from './redux-stores/slices/CartSlice';
 import { useSelector,useDispatch } from 'react-redux';
 
 const Cart = () => {
@@ -24,6 +24,10 @@ const Cart = () => {
 
  const handleDecCart=(cartItem)=>{
   dispatch(decCartItem(cartItem));
+ }
+
+ const handleDelete=(name)=>{
+    dispatch(deleteCartItem(name))
  }
 
 
@@ -50,6 +54,7 @@ const Cart = () => {
                   <button className="btn btn-outline-primary btn-sm me-2" onClick={()=>handleDecCart(item.name)} disabled={item.quantity<=1}>-</button>
                   {item.quantity}
                   <button className="btn btn-outline-primary btn-sm ms-2" onClick={()=>handleIncCart(item.name)}>+</button>
+                  <button className="btn btn btn-sm ms-2" onClick={()=>{handleDelete(item.name)}}>🗑️</button>
                 </div>
               </li>
             ))}
